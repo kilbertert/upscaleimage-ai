@@ -1,16 +1,16 @@
-# ProductHunt Launch Post
+# ProductHunt — 最终版
 
 ## Tagline
-Free AI image upscaler — no signup, no limits, 100% private
+Upscale images up to 8× — runs entirely in your browser, nothing uploaded
 
 ## Description
-UpscaleImage.AI is a free tool that enlarges images up to 8× using AI-powered upscaling. Unlike other tools that require signup, have daily limits, or upload your images to their servers — UpscaleImage.AI does everything in your browser.
+A free image upscaler that uses bicubic interpolation to enlarge images up to 8×. All processing happens locally in your browser using JavaScript and the Canvas API — your images never leave your device.
 
 **Why we built this:**
 Every image upscaler we tried had some catch: signup required, 5 images per day limit, watermarks, or your images get uploaded to unknown servers. We wanted a tool that just works — no friction, no privacy concerns.
 
 **How it works:**
-All image processing happens locally using JavaScript and the Canvas API. Your images never leave your device. This also means we can offer unlimited free use with zero server costs.
+Uses bicubic interpolation (Mitchell-Netravali kernel) with a multi-step approach for better quality. Instead of upscaling 8× in one step, it does three sequential 2× steps — each step's kernel operates on neighboring pixels, producing significantly sharper results.
 
 **Features:**
 - 2×, 4×, 8× upscale with bicubic interpolation
@@ -19,24 +19,29 @@ All image processing happens locally using JavaScript and the Canvas API. Your i
 - No signup, no watermarks, no limits
 - Client-side processing — complete privacy
 - Works on desktop and mobile
+- Dark theme, modern UI
 
 ## First Comment
 Hey Product Hunt! 👋
 
-We built UpscaleImage.AI because we were frustrated with existing image upscalers. Every one had some limitation — signup walls, daily caps, watermarks, or sketchy privacy practices.
+I built this because I was frustrated with existing image upscalers. Every "free" tool had some hidden catch — signup walls, daily caps, watermarks, or sketchy privacy practices.
 
-Our approach is simple: do everything in the browser. No servers, no uploads, no limits. The trade-off is that our AI isn't as sophisticated as server-side neural networks, but for most use cases (web images, social media, quick enlargements) it works great.
+My approach: do everything in the browser using vanilla JavaScript and the Canvas API. No servers, no uploads, no limits.
+
+The technical challenge was making bicubic interpolation produce good results at high scale factors. The breakthrough was using a multi-step approach — instead of one 8× step, three sequential 2× steps. Each step's bicubic kernel operates on a denser grid, preserving much more local detail.
+
+The trade-off is that client-side processing can't match the quality of server-side neural networks like Real-ESRGAN. But for most use cases (web images, social media, quick enlargements, print preparation), the results are surprisingly good.
 
 Would love your feedback on the tool and what features you'd like to see next!
 
 ## Topics
 - Artificial Intelligence
-- Design Tools
+- Design Tools  
 - Developer Tools
 - Free
 - Privacy
 
 ## Gallery Images Needed
-1. Hero screenshot of the tool
-2. Before/after comparison example
-3. Feature highlights graphic
+1. Hero screenshot showing the tool interface
+2. Before/after comparison (side by side or slider view)
+3. Feature highlights (privacy, speed, quality)
