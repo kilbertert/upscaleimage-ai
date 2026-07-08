@@ -1,0 +1,7 @@
+# UpscaleImage.AI — Robots.txt
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /api/
+
+Sitemap: https://upscaleimage.ai/sitemap.xml

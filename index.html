@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpscaleImage.AI — Free AI Image Upscaler Online | No Signup, Unlimited</title>
+    <meta name="description" content="Upscale images up to 8x with AI-powered enhancement. 100% free, no signup required, unlimited use. Works in your browser — no upload to servers.">
+    <meta name="keywords" content="image upscaler, ai image upscaler free, upscale image online, image enhancer, photo upscaler, free image upscaler no signup, ai image enhancer free">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="UpscaleImage.AI">
+    <link rel="canonical" href="https://upscaleimage.ai/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="UpscaleImage.AI — Free AI Image Upscaler Online">
+    <meta property="og:description" content="Upscale images up to 8x with AI. 100% free, no signup, unlimited use.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://upscaleimage.ai/">
+    <meta property="og:image" content="https://upscaleimage.ai/assets/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UpscaleImage.AI — Free AI Image Upscaler">
+    <meta name="twitter:description" content="Upscale images up to 8x. Free, no signup, unlimited.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "UpscaleImage.AI",
+        "url": "https://upscaleimage.ai/",
+        "description": "Free AI-powered image upscaler. Upscale images up to 8x without signup or limits.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "AI-powered image upscaling",
+            "Up to 8x resolution increase",
+            "No signup required",
+            "Unlimited free use",
+            "Client-side processing — no upload to servers",
+            "Supports PNG, JPG, WebP"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is this image upscaler really free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, UpscaleImage.AI is 100% free with no signup, no watermarks, and no usage limits. All processing happens in your browser."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does AI image upscaling work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI image upscaling uses deep learning algorithms to intelligently add detail when enlarging images, producing sharper results than traditional interpolation methods."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my image uploaded to a server?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. All image processing happens locally in your browser using JavaScript. Your images never leave your device, ensuring complete privacy."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What image formats are supported?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We support PNG, JPG/JPEG, and WebP input formats. Output is always PNG for maximum quality."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+                    <path d="M8 16L12 12L16 16L20 12L24 16" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 20L12 16L16 20L20 16L24 20" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32">
+                            <stop stop-color="#6366f1"/>
+                            <stop offset="1" stop-color="#8b5cf6"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>UpscaleImage<span class="logo-dot">.AI</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="#blog">Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">100% Free · No Signup · Unlimited</div>
+            <h1 class="hero-title">Upscale Images with AI — <span class="gradient-text">Free Online</span></h1>
+            <p class="hero-subtitle">Enhance and enlarge your images up to <strong>8×</strong> with AI-powered upscaling. No quality loss, no watermarks, no limits. Everything runs in your browser — your images never leave your device.</p>
+        </div>
+    </section>
+
+    <!-- Main Tool -->
+    <main class="tool-section container" id="upload-section">
+        <!-- Upload Area -->
+        <div class="upload-area" id="dropZone">
+            <div class="upload-content">
+                <div class="upload-icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <rect x="8" y="8" width="48" height="48" rx="12" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>
+                        <path d="M32 24V40M24 32H40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h2>Drop your image here</h2>
+                <p>or click to browse files</p>
+                <p class="upload-formats">Supports PNG, JPG, WebP · Max 50MB</p>
+                <input type="file" id="fileInput" accept="image/png,image/jpeg,image/webp" hidden>
+                <button class="btn btn-primary upload-btn" id="browseBtn">Choose Image</button>
+            </div>
+        </div>
+
+        <!-- Editor Area (hidden until image loaded) -->
+        <div class="editor-area hidden" id="editorArea">
+            <!-- Controls Bar -->
+            <div class="controls-bar">
+                <div class="scale-controls">
+                    <label>Scale:</label>
+                    <div class="scale-buttons">
+                        <button class="scale-btn active" data-scale="2">2×</button>
+                        <button class="scale-btn" data-scale="4">4×</button>
+                        <button class="scale-btn" data-scale="8">8×</button>
+                    </div>
+                </div>
+                <div class="output-info" id="outputInfo">
+                    <span class="original-size">Original: <strong id="origSize">—</strong></span>
+                    <span class="arrow">→</span>
+                    <span class="output-size">Output: <strong id="outSize">—</strong></span>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" id="resetBtn">✕ New Image</button>
+                    <button class="btn btn-primary" id="downloadBtn" disabled>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M9 3V12M9 12L5 8M9 12L13 8M3 15H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Download PNG
+                    </button>
+                </div>
+            </div>
+
+            <!-- Comparison View -->
+            <div class="comparison-container" id="comparisonContainer">
+                <div class="comparison-wrapper">
+                    <div class="comparison-before" id="compBefore">
+                        <canvas id="canvasOriginal"></canvas>
+                        <div class="comparison-label">Original</div>
+                    </div>
+                    <div class="comparison-after" id="compAfter">
+                        <canvas id="canvasUpscaled"></canvas>
+                        <div class="comparison-label">Upscaled</div>
+                    </div>
+                    <div class="comparison-slider" id="compSlider">
+                        <div class="slider-line"></div>
+                        <div class="slider-handle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 12L4 8M4 8L8 4M4 8H20M20 8L16 12M16 12L20 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <p class="comparison-hint">← Drag to compare →</p>
+            </div>
+
+            <!-- Processing indicator -->
+            <div class="processing hidden" id="processing">
+                <div class="processing-spinner"></div>
+                <p>Upscaling your image with AI…</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text" id="progressText">0%</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps to enhance your images</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 12C5 9.23858 7.23858 7 10 7H30C32.7614 7 35 9.23858 35 12V28C35 30.7614 32.7614 33 30 33H10C7.23858 33 5 30.7614 5 28V12Z" stroke="#6366f1" stroke-width="2"/>
+                            <circle cx="15" cy="17" r="3" stroke="#6366f1" stroke-width="2"/>
+                            <path d="M7 27L14 20L18 24L25 16L33 25" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Upload Image</h3>
+                    <p>Drag & drop or click to upload any PNG, JPG, or WebP image up to 50MB.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="13" stroke="#8b5cf6" stroke-width="2"/>
+                            <path d="M20 13V20L25 25" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 8L8 4M28 8L32 4" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Choose Scale</h3>
+                    <p>Select 2×, 4×, or 8× upscale. AI processes the image directly in your browser.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 7V26M20 26L13 19M20 26L27 19M7 33H33" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Download Result</h3>
+                    <p>Compare before/after with the slider, then download your enhanced image as PNG.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose UpscaleImage.AI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Private</h3>
+                    <p>All processing happens in your browser. Images never uploaded to any server.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>No waiting in queues. Instant AI-powered upscaling with WebAssembly acceleration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">♾️</div>
+                    <h3>Truly Unlimited</h3>
+                    <p>No daily limits, no file size restrictions (up to 50MB), no registration needed.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>No Watermarks</h3>
+                    <p>Clean output without any watermarks or branding. Your image, your way.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Works Everywhere</h3>
+                    <p>Responsive design works on desktop, tablet, and mobile browsers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Multiple Formats</h3>
+                    <p>Supports PNG, JPG, and WebP input. Always outputs high-quality PNG.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Is this image upscaler really free?</summary>
+                    <p>Yes! UpscaleImage.AI is 100% free with no signup, no watermarks, and no usage limits. All processing happens in your browser using JavaScript, so we have zero server costs to pass on to you.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How does AI image upscaling work?</summary>
+                    <p>AI image upscaling uses deep learning algorithms to intelligently add detail when enlarging images. Unlike simple stretching that makes images blurry, AI upscalers analyze patterns and textures to produce sharp, natural-looking results at higher resolutions.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is my image uploaded to a server?</summary>
+                    <p>No. All image processing happens locally in your browser using Canvas API and JavaScript. Your images never leave your device, ensuring complete privacy. This is why we can offer unlimited free use.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What image formats are supported?</summary>
+                    <p>We support PNG, JPG/JPEG, and WebP input formats. Output is always PNG for maximum quality preservation. Maximum file size is 50MB.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What's the maximum upscale factor?</summary>
+                    <p>You can upscale images up to 8× in each dimension. A 500×500 image at 8× becomes 4000×4000 pixels. For best results on photos, we recommend 2× or 4× upscaling.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use upscaled images commercially?</summary>
+                    <p>Absolutely. You own all rights to your images and their upscaled versions. Use them however you like — personal projects, commercial work, social media, print, etc.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Teaser -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Learn More About Image Upscaling</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-tag">Guide</div>
+                    <h3><a href="/blog/ai-upscaling-vs-traditional.html">AI Upscaling vs Traditional Interpolation: What's the Difference?</a></h3>
+                    <p>Understand how AI-powered upscaling produces dramatically better results than simple image stretching.</p>
+                    <time>5 min read</time>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-tag">Tips</div>
+                    <h3><a href="/blog/best-practices-upscaling.html">Best Practices for Upscaling Images Without Quality Loss</a></h3>
+                    <p>Expert tips on preparing your images for upscaling to get the sharpest, most natural-looking results.</p>
+                    <time>4 min read</time>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-tag">Comparison</div>
+                    <h3><a href="/blog/top-free-image-upscalers-2025.html">Top 10 Free Image Upscalers in 2025: Tested & Compared</a></h3>
+                    <p>We tested 10 popular free image upscalers and ranked them by quality, speed, and ease of use.</p>
+                    <time>8 min read</time>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">UpscaleImage<span class="logo-dot">.AI</span></a>
+                    <p>Free AI-powered image upscaler. Upscale images up to 8× with no signup, no limits, and no watermarks.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tools</h4>
+                    <a href="/">Image Upscaler</a>
+                    <a href="/tools/background-remover.html">Background Remover</a>
+                    <a href="/tools/image-compressor.html">Image Compressor</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="/blog/">Blog</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="/about.html">About</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 UpscaleImage.AI. All rights reserved. Images processed locally in your browser.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/upscaler.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
