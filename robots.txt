@@ -4,4 +4,4 @@ Allow: /
 Disallow: /assets/js/
 Disallow: /api/
 
-Sitemap: https://upscaleimage.ai/sitemap.xml
+Sitemap: https://ranlei.work/sitemap.xml
